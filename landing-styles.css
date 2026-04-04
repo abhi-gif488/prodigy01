@@ -1,25 +1,14 @@
 /* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;line-height:1.6;color:#333;overflow-x:hidden}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    overflow-x: hidden;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.navbar{position:fixed;top:0;left:0;width:100%;background:transparent;padding:1rem 0;z-index:1000;transition:all .4s ease}
+.navbar.scrolled{background:rgba(255,255,255,.98);box-shadow:0 2px 20px rgba(0,0,0,.1);padding:.5rem 0}
+.navbar.scrolled .logo span,.navbar.scrolled .nav-link{color:#333}
+.navbar.scrolled .logo i{color:#667eea}
+.navbar.scrolled .hamburger .bar{background-color:#333}
 }
 
 /* Navigation Menu */
